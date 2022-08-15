@@ -6,6 +6,7 @@ using TimelessEmulator.Data;
 using TimelessEmulator.Data.Models;
 using TimelessEmulator.Game;
 
+
 namespace TimelessEmulator;
 
 public static class Program
@@ -17,7 +18,17 @@ public static class Program
     }
 
     public static void Main(string[] arguments)
+
+
+
     {
+        //var duelist_ids = new List<int> { 1325, 3009, 3319, 4565, 4833, 7786, 8544, 10073, 11364, 11859, 12236, 14813, 16544, 17201, 17383, 17566, 18103, 19730, 19750, 19782, 21435, 22423, 23066, 24083, 24641, 25324, 25456, 26456, 28863, 29185, 29933, 30155, 30842, 31471, 32053, 32059, 34031, 34666, 34973, 35977, 36200, 36222, 36972, 37584, 38772, 39338, 43303, 43412, 43413, 43684, 45358, 46730, 47030, 48438, 48859, 49109, 49147, 49416, 49538, 49971, 52632, 54127, 55648, 56001, 57949, 58541, 58545, 58803, 59766, 60002, 62588, 63027, 65400 };
+
+        var duelist_ids = new List<string> { "golem's_blood1088", "dual_wield_damage1859", "shield_block35", "dual_wield_speed567", "maximum_endurance_charges133", "totem_attack_damage2676", "dexterity840", "armour_guards_2378", "poison_bleed_chance_2179", "strength1984", "melee_physical_damage_with_shield1854", "mana_on_kill_notable1704", "dexterity838", "dexterity987", "mana_on_kill1475", "armour_and_evasion1454", "dexterity1990_", "stances_notable2758_", "mastery_evasion115", "defences_with_shield1857", "leather_and_steel1458", "dual_wield_damage622", "maximum_frenzy_charges527", "strength1005", "dual_wield_damage621", "melee_physical_damage_with_shield1856", "dervish1028", "mace_damage_and_armour1568", "mastery_attack13", "two_hand_crit2539", "life1196", "projectile_damage1860", "two_hand_damage1862", "life1213", "stances2757", "two_hand_crit_notable2542", "strength1004", "executioner648", "warcry_empowered_notable2713", "mastery_warcry251", "warcry_empowered2712", "projectile_damage1131", "two_handed_attack_speed649", "endurance_charge_duration2003", "stances2756", "mastery_twohand245_", "two_hand_damage1861", "two_handed_damage646", "shield_block33", "poison_bleed_duration_2180", "mastery_armour11", "melee_physical_damage_with_shield1855", "projectile_damage1271", "life_armour_evasion_notable1853", "mastery_mana171", "armour_and_evasion1453", "armour_guards_2379", "armour_guards_notable_2380", "melee_physical_damage_with_shield_notable1858", "frenzy_charge_duration2006", "projectile_damage1130", "jewel_slot1975", "totem_attack_damage2677", "strength1983", "mastery_damageovertime82", "mace_damage77", "mana_on_kill1476", "two_hand_crit2541", "poison_bleed_notable_2181", "fury_bolts1132", "mastery_life138", "warcry_empowered2710", "warcry_empowered2711" };
+        var testJewel = new TestJewel();
+
+        testJewel.ProcessIds(duelist_ids);
+
         Console.Title = $"{Settings.ApplicationName} Ver. {Settings.ApplicationVersion}";
 
         AnsiConsole.MarkupLine("Hello, [green]exile[/]!");
